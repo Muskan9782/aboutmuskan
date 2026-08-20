@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muskan - Data Engineer specializing in Python, SQL, Azure, PySpark, Kafka, and scalable data systems." />
+  <title>Muskan | Data Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+  <div id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">muskan</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#about" role="menuitem" class="nav-link">About</a></li>
+        <li role="none"><a href="#experience" role="menuitem" class="nav-link">Experience</a></li>
+        <li role="none"><a href="#projects" role="menuitem" class="nav-link">Projects</a></li>
+        <li role="none"><a href="#skills" role="menuitem" class="nav-link">Skills</a></li>
+        <li role="none"><a href="#education" role="menuitem" class="nav-link">Education</a></li>
+        <li role="none"><a href="#contact" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Data Engineering Roles
+      </div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name"><span class="gradient-text">Muskan</span></h1>
+      <h2 class="hero-title">I build <span class="typed-wrapper"><span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span></span></h2>
+      <p class="hero-description">Data Engineer crafting scalable pipelines, real-time streaming systems, and end-to-end analytics platforms. IIT (ISM) Dhanbad graduate with hands-on experience across Azure, PySpark, Kafka, and Airflow.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Resume</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span><span class="stat-plus">M+</span>
+          <span class="stat-label">Records Processed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="9">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">DSA Problems</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 id="about-heading" class="section-title">
+          <span class="title-number">01.</span>About Me<span class="title-line"></span>
+        </h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="highlight">HELLO, I'M MUSKAN!</p>
+          <p>Currently working as a <strong>Business Intelligence Analyst</strong> at Element14 (Avnet) in Bengaluru, where I design and build automated data pipelines, fuzzy-matching engines processing millions of records, and predictive models for customer reactivation.</p>
+          <p>My journey started in Mechanical Engineering at <strong>IIT (ISM) Dhanbad</strong>, but I quickly found my passion in data systems. From redesigning industrial processes worth at Jindal Power to building real-time fraud detection engines with Kafka and PySpark &mdash; I thrive at the intersection of engineering rigor and data innovation.</p>
+          <p>I'm particularly passionate about <strong>data engineering</strong>, <strong>real-time streaming architectures</strong>, and <strong>cloud-native data platforms</strong> on Azure and GCP.</p>
+        </div>
+        <div class="about-card reveal-right">
+          <div class="about-photo-wrapper">
+            <img src="images/foliophoto.jpg" alt="Muskan - Data Engineer" loading="lazy" />
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-info-item">
+              <span class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><span class="info-label">Location</span><br><span class="info-value">Bengaluru, India</span></div>
+            </div>
+            <div class="quick-info-item">
+              <span class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+              <div><span class="info-label">Company</span><br><span class="info-value">Element14 (Avnet)</span></div>
+            </div>
+            <div class="quick-info-item">
+              <span class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg></span>
+              <div><span class="info-label">Education</span><br><span class="info-value">IIT (ISM) Dhanbad</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 id="experience-heading" class="section-title">
+          <span class="title-number">02.</span>Experience<span class="title-line"></span>
+        </h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Business Intelligence Analyst &mdash; I</h3>
+                <p class="timeline-company">Element14 (Avnet)</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jun 2025 &ndash; Present</span>
+                <span class="timeline-location">Bengaluru, Karnataka</span>
+              </div>
+            </div>
+            <div class="timeline-description">
+              <ul>
+                <li>Developed a <strong>Python/Pandas/RapidFuzz</strong> fuzzy-matching pipeline identifying reseller accounts across <strong>6M+ records</strong> using token normalization, Levenshtein similarity and chunked processing; reduced manual matching for 90+ weekly records from <strong>30+ hours to ~5 minutes</strong>.</li>
+                <li>Automated data extraction, transformation and distribution across <strong>Adobe APIs, SQL Server, Outlook and FTP</strong> for all regions, reducing preparation time for 5 monthly reports from 1 week to half a day while minimizing manual errors.</li>
+                <li>Built a <strong>Python customer reactivation pipeline</strong> for 6.4M+ customers, engineering 30+ behavioral/transactional features and training a <strong>Random Forest model</strong> with temporal validation to predict 365-day reactivation.</li>
+              </ul>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-cyan">Pandas</span>
+              <span class="tag tag-cyan">RapidFuzz</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag tag-purple">Random Forest</span>
+              <span class="tag">Adobe APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Graduate Engineer Trainee</h3>
+                <p class="timeline-company">Jindal Power Limited</p>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jul 2024 &ndash; May 2025</span>
+                <span class="timeline-location">Raigarh, Chhattisgarh</span>
+              </div>
+            </div>
+            <div class="timeline-description">
+              <ul>
+                <li>Developed an <strong>ML-based predictive maintenance model</strong> using lubrication, power consumption, speed, temperature and breakdown data to identify failure risks and enable proactive maintenance before critical failure, helping prevent unplanned plant shutdowns.</li>
+                <li>Redesigned a closed-loop coal handling circuit from crusher to final delivery, performing <strong>capacity analysis, equipment sizing, process optimization</strong>, feasibility and cost estimation for an <strong>INR 350+ Cr project</strong> selected for implementation.</li>
+              </ul>
+            </div>
+            <div class="timeline-tags">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-purple">Machine Learning</span>
+              <span class="tag">Predictive Maintenance</span>
+              <span class="tag">Process Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 id="projects-heading" class="section-title">
+          <span class="title-number">03.</span>Projects<span class="title-line"></span>
+        </h2>
+        <p class="section-subtitle">From data pipelines to real-time systems &mdash; here's what I've built.</p>
+      </div>
+      <div class="projects-filters reveal-up" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn" data-filter="data-engineering" aria-pressed="false">Data Engineering</button>
+        <button class="filter-btn" data-filter="analytics" aria-pressed="false">Analytics &amp; ML</button>
+        <button class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Featured: Azure Data Pipeline -->
+        <article class="project-card featured" data-category="data-engineering" class="reveal-up">
+          <div class="project-inner">
+            <div class="project-thumbnail">
+              <img src="images/thumbs/e2eazurepipeline.jpg" alt="Azure Data Pipeline" loading="lazy" />
+              <div class="project-thumbnail-overlay">
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                </div>
+              </div>
+              <span class="project-badge">Featured</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">End-to-End Azure Data Pipeline for E-Commerce Analytics</h3>
+              <p class="project-description">Built an Azure data pipeline using ADF to ingest 8 e-commerce datasets from GitHub/HTTP and MySQL into ADLS Gen2 Bronze using configuration-driven sequential ingestion and ARM templates. Implemented Medallion Architecture (Bronze-Silver-Gold) with Databricks/PySpark for deduplication, feature engineering, 5 sequential joins and MongoDB product-category enrichment. Built the Synapse serving layer using views and CETAS with Parquet/Snappy compression.</p>
+              <div class="project-tech">
+                <span class="tag tag-cyan">ADF</span>
+                <span class="tag tag-cyan">Databricks</span>
+                <span class="tag tag-cyan">PySpark</span>
+                <span class="tag">ADLS Gen2</span>
+                <span class="tag">Synapse</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Muskan9782/End-to-End-Azure-Data-Pipeline-for-E-Commerce-Analytics" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Featured: Fraud Detection -->
+        <article class="project-card featured" data-category="data-engineering" class="reveal-up">
+          <div class="project-inner">
+            <div class="project-thumbnail">
+              <img src="images/thumbs/frauddetection.png" alt="Real-Time Fraud Detection" loading="lazy" />
+              <div class="project-thumbnail-overlay">
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+              </div>
+              <span class="project-badge">Featured</span>
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Real-Time Fraud Detection &amp; Risk Engine</h3>
+              <p class="project-description">Built an event-driven fraud pipeline using Kafka and PySpark Streaming, applying event-time windows, watermarks, stateful processing and stream joins to transaction, login, payment and location events. Engineered rule-based fraud detection with XGBoost risk scoring across velocity, impossible travel, login correlation, payment attacks and high-value anomalies; implemented Delta Lake Bronze-Silver-Gold layers with Airflow-driven training, quality checks and backfills.</p>
+              <div class="project-tech">
+                <span class="tag tag-cyan">Kafka</span>
+                <span class="tag tag-cyan">PySpark Streaming</span>
+                <span class="tag tag-purple">XGBoost</span>
+                <span class="tag">Delta Lake</span>
+                <span class="tag">Airflow</span>
+                <span class="tag">Docker</span>
+                <span class="tag tag-green">GCP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Muskan9782/Real-Time-Fraud-Detection-using-Airflow-Kafka-ML" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Insurance Data Analysis -->
+        <article class="project-card" data-category="analytics" class="reveal-up">
+          <div class="project-thumbnail">
+            <img src="images/thumbs/Insurance.jpg" alt="Insurance Data Analysis thumbnail" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Insurance Data Analysis (SQL + Power BI)</h3>
+            <p class="project-description">SQL-based data analysis with Power BI dashboard for insurance data insights.</p>
+            <div class="project-tech">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Muskan9782/Insurance-Data-Analysis.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://drive.google.com/file/d/1hFQteXepDrtCQ7wsca6nt_pCwqfpkzO7/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Report
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Customer Behavior Prediction -->
+        <article class="project-card" data-category="analytics" class="reveal-up">
+          <div class="project-thumbnail">
+            <img src="images/thumbs/Customer-Behavior-Prediction.png" alt="Customer Behavior Prediction thumbnail" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Customer Behavior Prediction using Python</h3>
+            <p class="project-description">ML model for customer behavior prediction and forecasting using Python.</p>
+            <div class="project-tech">
+              <span class="tag tag-cyan">Python</span>
+              <span class="tag tag-purple">Machine Learning</span>
+              <span class="tag">Prediction</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Muskan9782/Customer-Behavior-Forecasting.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://drive.google.com/file/d/1o90togJNe19UwlTxf-C3jbfofMcb6JLa/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Report
+              </a>
+            </div>
+          </div>
+        </article>
+
+       
+        <!-- CoMeds -->
+        <article class="project-card" data-category="web" class="reveal-up">
+          <div class="project-thumbnail">
+            <img src="images/thumbs/comeds.jpg" alt="CoMeds Medical Equipment Web App" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Medical Equipment Selling Web App (CoMeds)</h3>
+            <p class="project-description">Full-stack medical equipment selling web application.</p>
+            <div class="project-tech">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Web App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Muskan9782/CoMeds.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.youtube.com/watch?v=Gv-NaOOOdXE" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Video
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hospital Management System -->
+        <article class="project-card" data-category="web" class="reveal-up">
+          <div class="project-thumbnail">
+            <img src="images/thumbs/testing.jpg" alt="Hospital Management System" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Hospital Management System</h3>
+            <p class="project-description">Desktop hospital management application with database integration.</p>
+            <div class="project-tech">
+              <span class="tag">Desktop App</span>
+              <span class="tag">Java</span>
+              <span class="tag">Database</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Muskan9782/Hospital-Management-System.git" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.youtube.com/watch?v=OW4m_rbq5qQ" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Video
+              </a>
+            </div>
+          </div>
+        </article>
+
+        
+        <!-- Movie Search Engine -->
+        <article class="project-card" data-category="web" class="reveal-up">
+          <div class="project-thumbnail">
+            <img src="images/thumbs/homepageMovie.png" alt="Movie Search Engine" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Movie Search Engine</h3>
+            <p class="project-description">Movie search engine web application with API integration.</p>
+            <div class="project-tech">
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
+              <span class="tag">Web App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Muskan9782/Projects/tree/main/movieSearchApp" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+              <a href="https://muskan9782.github.io/movieSearchApp/" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 id="skills-heading" class="section-title">
+          <span class="title-number">04.</span>Skills<span class="title-line"></span>
+        </h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal-up">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <h3 class="skill-category-title">Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-cyan">SQL</span>
+            <span class="tag">C++</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+            <h3 class="skill-category-title">Data Engineering</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-cyan">ETL/ELT</span>
+            <span class="tag tag-cyan">Data Pipelines</span>
+            <span class="tag tag-cyan">PySpark</span>
+            <span class="tag tag-cyan">Apache Airflow</span>
+            <span class="tag tag-cyan">Apache Kafka</span>
+            <span class="tag">Data Modeling</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg></span>
+            <h3 class="skill-category-title">Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-cyan">Azure Data Factory</span>
+            <span class="tag tag-cyan">Azure Databricks</span>
+            <span class="tag tag-cyan">ADLS Gen2</span>
+            <span class="tag tag-cyan">Azure Synapse</span>
+            <span class="tag tag-green">GCP</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+            <h3 class="skill-category-title">Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">MS SQL Server</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-category reveal-up">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+            <h3 class="skill-category-title">Tools &amp; Analytics</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">SAP</span>
+            <span class="tag">MS Excel</span>
+            <span class="tag">Postman</span>
+            <span class="tag tag-purple">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section" aria-labelledby="education-heading">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <h2 id="education-heading" class="section-title">
+          <span class="title-number">05.</span>Education<span class="title-line"></span>
+        </h2>
+      </div>
+      <div class="education-card reveal-up">
+        <div class="education-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 class="education-university">Indian Institute of Technology (ISM) Dhanbad</h3>
+        <p class="education-degree">B.Tech. in Mechanical Engineering (Spl. Mining Machinery)</p>
+        <div class="education-meta">
+          <span>Dec 2020 &ndash; May 2024</span>
+          <span>Full Time</span>
+        </div>
+        <div class="education-cgpa">CGPA: 8.13</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-content reveal-up">
+        <h2 id="contact-heading" class="contact-heading">Let's Build Something <span class="text-gradient">Amazing</span> Together</h2>
+        <p class="contact-description">I'm always open to discussing new opportunities, interesting data challenges, and collaborations. Feel free to reach out!</p>
+        <a href="mailto:muskan97820@gmail.com" class="contact-email-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Say Hello
+        </a>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/muskan-s-8472081bb/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/Muskan9782" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="tel:+919782005139" class="social-link" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a href="mailto:muskan97820@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-awards reveal-up">
+        <h3 class="footer-awards-title">Awards &amp; Achievements</h3>
+        <div class="footer-awards-list">
+          <span class="footer-award"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Spot Awards (Two Quarters) at Element14</span>
+          <span class="footer-award"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>Extra Mile Award</span>
+          <span class="footer-award"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>500+ DSA Problems</span>
+        </div>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Muskan. Built with <span class="heart">&hearts;</span>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
